@@ -48,7 +48,7 @@ AppDataSource.initialize()
 It's a good idea to make `AppDataSource` globally available by `export`-ing it, since you'll
 use this instance across your application.
 
-`DataSource` accepts `DataSourceOptions` and those options vary depend on database `type` you use.
+`DataSource` accepts `DataSourceOptions`, and those options vary depending on the database `type` you use.
 For different database types there are different options you can specify.
 
 You can define as many data sources as you need in your application, for example:
@@ -97,6 +97,6 @@ export class UserController {
 }
 ```
 
-Using `DataSource` instance you can execute database operations with your entities,
+Using `DataSource` instance, you can execute database operations with your entities,
 particularly using `.manager` and `.getRepository()` properties.
 For more information about them see [Entity Manager and Repository](working-with-entity-manager.md) documentation.
